@@ -13,9 +13,9 @@
                         <table alignment="left" id="75c-DF-YUw">
                             <items>
                                 <tableRow identifier="EmojiRow" id="9kr-Vv-kaA" customClass="EmojiRow" customModule="Emoji_Dictionary_WatchKit_Extension">
-                                    <group key="rootItem" width="1" alignment="left" id="o1Y-k5-6qQ">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" contentMode="left" id="o1Y-k5-6qQ">
                                         <items>
-                                            <label alignment="left" text="😄" id="87A-uR-zf8"/>
+                                            <label alignment="center" text="😄" textAlignment="center" id="87A-uR-zf8"/>
                                         </items>
                                     </group>
                                     <connections>

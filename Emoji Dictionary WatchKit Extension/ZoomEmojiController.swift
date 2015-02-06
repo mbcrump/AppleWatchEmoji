@@ -10,6 +10,7 @@ import WatchKit
 import Foundation
 
 
+
 class ZoomEmojiController: WKInterfaceController {
 
     @IBOutlet weak var zoomEmojiLabel: WKInterfaceLabel!
@@ -25,11 +26,15 @@ class ZoomEmojiController: WKInterfaceController {
         
         var definition = "No Definition"
         
-        if emoji == "💒" {
-            definition = "Church"
-        }
+        var str = emoji
+        var result = str[str.startIndex..<str.startIndex.successor()]
+        let c : String = emoji
         
-        definitionLabel.setText(definition)
+        let cfstr = NSMutableString(string: String(c)) as CFMutableString
+        var range = CFRangeMake(0, CFStringGetLength(cfstr))
+        CFStringTransform(cfstr, &range, kCFStringTransformToUnicodeName, 0)
+        
+        definitionLabel.setText(cfstr)
         
     }
 

@@ -15,10 +15,28 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var table: WKInterfaceTable!
     //CTRL-CMD-SPACE
-    var emojis = ["😃", "🎃", "💒"]
+    //var emojis = ["😃", "🎃", "💒"]
+    
+    var emojis = [""]
+    
+    let emojiRanges = [
+        0x1F601...0x1F64F,
+        0x2702...0x27B0,
+        0x1F680...0x1F6C0,
+        0x1F170...0x1F251
+    ]
+  
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
+        
+        
+        for range in emojiRanges {
+            for i in range {
+                
+                emojis.append(String(UnicodeScalar(i)))
+            }
+        }
         
         self.table.setNumberOfRows(emojis.count, withRowType: "EmojiRow")
         
