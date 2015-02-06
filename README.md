@@ -1,0 +1,1 @@
+# Apple Watch Emoji Dictionary
