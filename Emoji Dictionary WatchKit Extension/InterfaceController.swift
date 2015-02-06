@@ -14,12 +14,24 @@ class InterfaceController: WKInterfaceController {
 
 
     @IBOutlet weak var table: WKInterfaceTable!
+    //CTRL-CMD-SPACE
+    var emojis = ["😃", "🎃", "💒"]
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        self.table.setNumberOfRows(20, withRowType: "EmojiRow")
+        self.table.setNumberOfRows(emojis.count, withRowType: "EmojiRow")
         
+        for index in 0..<emojis.count {
+            var theRow = table.rowControllerAtIndex(index) as EmojiRow
+            theRow.emojiRowLabel.setText(emojis[index])
+            
+        }
+        
+    }
+    
+    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+        self.pushControllerWithName("ZoomEmojiController", context: emojis[rowIndex])
     }
 
     override func willActivate() {

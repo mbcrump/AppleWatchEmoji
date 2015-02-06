@@ -32,6 +32,22 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--ZoomEmojiController-->
+        <scene sceneID="F3p-ne-Rw6">
+            <objects>
+                <controller identifier="ZoomEmojiController" id="bNL-Kg-um3" customClass="ZoomEmojiController" customModule="Emoji_Dictionary_WatchKit_Extension">
+                    <items>
+                        <label width="1" height="100" alignment="left" text="😄" textAlignment="center" id="v6J-vy-kEY"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="8OU-l2-Pcy"/>
+                    </items>
+                    <connections>
+                        <outlet property="definitionLabel" destination="8OU-l2-Pcy" id="P3u-87-g6f"/>
+                        <outlet property="zoomEmojiLabel" destination="v6J-vy-kEY" id="Qrd-5G-dtR"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="416" y="344"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>

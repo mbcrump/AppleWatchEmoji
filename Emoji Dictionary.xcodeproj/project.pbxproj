@@ -21,6 +21,7 @@
 		86B4C9AA1A852A1500843237 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86B4C9A91A852A1500843237 /* Images.xcassets */; };
 		86B4C9AD1A852A1500843237 /* Emoji Dictionary WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86B4C9921A852A1500843237 /* Emoji Dictionary WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		86B4C9B61A852C7600843237 /* EmojiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B4C9B51A852C7600843237 /* EmojiRow.swift */; };
+		86B4C9B81A85608B00843237 /* ZoomEmojiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B4C9B71A85608B00843237 /* ZoomEmojiController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		86B4C9A71A852A1500843237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		86B4C9A91A852A1500843237 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86B4C9B51A852C7600843237 /* EmojiRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRow.swift; sourceTree = "<group>"; };
+		86B4C9B71A85608B00843237 /* ZoomEmojiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomEmojiController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				86B4C9971A852A1500843237 /* InterfaceController.swift */,
 				86B4C9991A852A1500843237 /* NotificationController.swift */,
 				86B4C9B51A852C7600843237 /* EmojiRow.swift */,
+				86B4C9B71A85608B00843237 /* ZoomEmojiController.swift */,
 				86B4C99B1A852A1500843237 /* Images.xcassets */,
 				86B4C9941A852A1500843237 /* Supporting Files */,
 			);
@@ -388,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86B4C99A1A852A1500843237 /* NotificationController.swift in Sources */,
+				86B4C9B81A85608B00843237 /* ZoomEmojiController.swift in Sources */,
 				86B4C9981A852A1500843237 /* InterfaceController.swift in Sources */,
 				86B4C9B61A852C7600843237 /* EmojiRow.swift in Sources */,
 			);
