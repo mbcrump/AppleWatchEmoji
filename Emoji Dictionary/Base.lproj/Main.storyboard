@@ -26,24 +26,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an Emoji on your watch!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-GB-qZl">
-                                <rect key="frame" x="85" y="446" width="476" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an Emoji on your watch to see what it means!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNQ-GB-qZl">
+                                <rect key="frame" x="96" y="372" width="408" height="95"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="teX-Dp-gW1"/>
+                                    <constraint firstAttribute="height" constant="95" id="Q3x-HE-tTb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vNQ-GB-qZl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="80" id="2b9-Ng-Bx4"/>
+                            <constraint firstItem="vNQ-GB-qZl" firstAttribute="centerX" secondItem="Sgf-C9-6eV" secondAttribute="centerX" id="5k7-Df-JTS"/>
                             <constraint firstItem="Sgf-C9-6eV" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="MWd-oh-jsg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="vNQ-GB-qZl" secondAttribute="trailing" constant="23" id="Tnt-sV-u4b"/>
+                            <constraint firstItem="vNQ-GB-qZl" firstAttribute="top" secondItem="Sgf-C9-6eV" secondAttribute="bottom" constant="8" symbolic="YES" id="Q8K-Fb-B1S"/>
                             <constraint firstItem="Sgf-C9-6eV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="UuQ-ZF-MLW"/>
-                            <constraint firstItem="vNQ-GB-qZl" firstAttribute="top" secondItem="Sgf-C9-6eV" secondAttribute="bottom" constant="82" id="WdT-RH-3pF"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vNQ-GB-qZl" secondAttribute="bottom" constant="133" id="Z5X-FG-uO4"/>
-                            <constraint firstItem="vNQ-GB-qZl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="69" id="wXa-05-ciT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vNQ-GB-qZl" secondAttribute="bottom" constant="133" id="chp-pa-eT0"/>
                         </constraints>
                     </view>
                 </viewController>
