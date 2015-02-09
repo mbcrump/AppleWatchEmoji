@@ -38,7 +38,7 @@
                 <controller identifier="ZoomEmojiController" id="bNL-Kg-um3" customClass="ZoomEmojiController" customModule="Emoji_Dictionary_WatchKit_Extension">
                     <items>
                         <label width="1" height="100" alignment="left" text="😄" textAlignment="center" id="v6J-vy-kEY"/>
-                        <label alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="8OU-l2-Pcy"/>
+                        <label alignment="center" text="Label" textAlignment="center" numberOfLines="3" id="8OU-l2-Pcy"/>
                     </items>
                     <connections>
                         <outlet property="definitionLabel" destination="8OU-l2-Pcy" id="P3u-87-g6f"/>

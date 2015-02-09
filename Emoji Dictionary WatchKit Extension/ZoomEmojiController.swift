@@ -26,19 +26,18 @@ class ZoomEmojiController: WKInterfaceController {
         
         var definition = "No Definition"
         
-        var str = emoji
-        var result = str[str.startIndex..<str.startIndex.successor()]
         let c : String = emoji
         
        
         let cfstr = NSMutableString(string: String(c)) as CFMutableString
-        
-
-        
         var range = CFRangeMake(0, CFStringGetLength(cfstr))
         CFStringTransform(cfstr, &range, kCFStringTransformToUnicodeName, 0)
         
-        definitionLabel.setText(cfstr)
+        var finalresult = cfstr as String
+        
+        finalresult = finalresult[advance(finalresult.startIndex,3)..<advance(finalresult.startIndex,countElements(finalresult))]
+        
+        definitionLabel.setText(finalresult.substringToIndex(finalresult.endIndex.predecessor()))
         
     }
 
