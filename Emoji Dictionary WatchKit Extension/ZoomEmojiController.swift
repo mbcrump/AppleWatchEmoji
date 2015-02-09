@@ -20,7 +20,7 @@ class ZoomEmojiController: WKInterfaceController {
         super.awakeWithContext(context)
         
         var emoji = context as String
-        var font = UIFont.systemFontOfSize(90)
+        var font = UIFont.systemFontOfSize(80)
         var specialString = NSAttributedString(string: emoji, attributes: [NSFontAttributeName:font])
         zoomEmojiLabel.setAttributedText(specialString)
         
@@ -30,7 +30,11 @@ class ZoomEmojiController: WKInterfaceController {
         var result = str[str.startIndex..<str.startIndex.successor()]
         let c : String = emoji
         
+       
         let cfstr = NSMutableString(string: String(c)) as CFMutableString
+        
+
+        
         var range = CFRangeMake(0, CFStringGetLength(cfstr))
         CFStringTransform(cfstr, &range, kCFStringTransformToUnicodeName, 0)
         
