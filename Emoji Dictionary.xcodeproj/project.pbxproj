@@ -85,6 +85,8 @@
 		86B4C9A91A852A1500843237 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		86B4C9B51A852C7600843237 /* EmojiRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiRow.swift; sourceTree = "<group>"; };
 		86B4C9B71A85608B00843237 /* ZoomEmojiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomEmojiController.swift; sourceTree = "<group>"; };
+		86EEB6131A89AFB8002F9407 /* Emoji Dictionary.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Emoji Dictionary.entitlements"; sourceTree = "<group>"; };
+		86EEB6141A89B047002F9407 /* Emoji Dictionary WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Emoji Dictionary WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		86B4C96B1A85295C00843237 /* Emoji Dictionary */ = {
 			isa = PBXGroup;
 			children = (
+				86EEB6131A89AFB8002F9407 /* Emoji Dictionary.entitlements */,
 				86B4C96E1A85295C00843237 /* AppDelegate.swift */,
 				86B4C9701A85295C00843237 /* ViewController.swift */,
 				86B4C9721A85295C00843237 /* Main.storyboard */,
@@ -175,6 +178,7 @@
 		86B4C9931A852A1500843237 /* Emoji Dictionary WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				86EEB6141A89B047002F9407 /* Emoji Dictionary WatchKit Extension.entitlements */,
 				86B4C9971A852A1500843237 /* InterfaceController.swift */,
 				86B4C9991A852A1500843237 /* NotificationController.swift */,
 				86B4C9B51A852C7600843237 /* EmojiRow.swift */,
@@ -296,6 +300,12 @@
 				TargetAttributes = {
 					86B4C9681A85295C00843237 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = FU3GVGK5AH;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					86B4C97D1A85295C00843237 = {
 						CreatedOnToolsVersion = 6.2;
@@ -303,6 +313,12 @@
 					};
 					86B4C9911A852A1500843237 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = FU3GVGK5AH;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					86B4C99E1A852A1500843237 = {
 						CreatedOnToolsVersion = 6.2;
@@ -526,10 +542,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictionary/Emoji Dictionary.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -537,10 +557,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictionary/Emoji Dictionary.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Emoji Dictionary/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -613,6 +637,9 @@
 		86B4C9B21A852A1500843237 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictionary WatchKit Extension/Emoji Dictionary WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -620,6 +647,7 @@
 				INFOPLIST_FILE = "Emoji Dictionary WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -627,9 +655,13 @@
 		86B4C9B31A852A1500843237 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Emoji Dictionary WatchKit Extension/Emoji Dictionary WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Emoji Dictionary WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -653,6 +685,7 @@
 				86B4C98A1A85295C00843237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86B4C98B1A85295C00843237 /* Build configuration list for PBXNativeTarget "Emoji DictionaryTests" */ = {
 			isa = XCConfigurationList;
@@ -661,6 +694,7 @@
 				86B4C98D1A85295C00843237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86B4C9AE1A852A1500843237 /* Build configuration list for PBXNativeTarget "Emoji Dictionary WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +703,7 @@
 				86B4C9B01A852A1500843237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		86B4C9B11A852A1500843237 /* Build configuration list for PBXNativeTarget "Emoji Dictionary WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +712,7 @@
 				86B4C9B31A852A1500843237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

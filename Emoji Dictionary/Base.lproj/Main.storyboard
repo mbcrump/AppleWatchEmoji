@@ -46,6 +46,10 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="vNQ-GB-qZl" secondAttribute="bottom" constant="133" id="chp-pa-eT0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emojiDescription" destination="vNQ-GB-qZl" id="lmV-04-5d5"/>
+                        <outlet property="emojiIcon" destination="Sgf-C9-6eV" id="MTe-cc-1OH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

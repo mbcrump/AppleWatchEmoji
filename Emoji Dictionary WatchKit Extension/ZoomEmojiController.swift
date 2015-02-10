@@ -39,6 +39,14 @@ class ZoomEmojiController: WKInterfaceController {
         
         definitionLabel.setText(finalresult.substringToIndex(finalresult.endIndex.predecessor()))
         
+    
+        
+        let userDefaults = NSUserDefaults(suiteName: "group.net.michaelcrump.emojidictionary")
+        userDefaults!.setObject(emoji, forKey: "currentEmoji")
+        userDefaults!.setObject(finalresult.substringToIndex(finalresult.endIndex.predecessor()), forKey: "currentDescription")
+        userDefaults!.synchronize()
+        
+        
     }
 
     override func willActivate() {
