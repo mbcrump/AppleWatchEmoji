@@ -5,6 +5,9 @@ by: [Michael Crump](http://twitter.com/mbcrump)
 
 This is an app built with Xcode 6 Beta 4 that uses the Apple Watch to display and lookup what an emoji means. 
 
+Below is a demo: 
+
+![image](https://github.com/mbcrump/AppleWatchEmoji/blob/master/demo.gif)
 
 ####Here is my contact info
 
