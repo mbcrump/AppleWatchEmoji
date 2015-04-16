@@ -29,13 +29,19 @@ class ViewController: UIViewController {
         userDefaults!.synchronize()
         
         //Add Current Selected Emoji Graphic
-        var emoji : AnyObject = userDefaults!.valueForKey("currentEmoji")!
+        
+        var emoji: AnyObject? = userDefaults!.valueForKey("currentEmoji")
+        
+        //var emoji2 : AnyObject = userDefaults!.valueForKey("currentEmoji")!
         if let string = emoji as? String {
             emojiIcon.text = string
         }
         
+        
         //Add Current Selected Emoji Description
-        var emojiDesc : AnyObject = userDefaults!.valueForKey("currentDescription")!
+        var emojiDesc: AnyObject? = userDefaults!.valueForKey("currentDescription")
+
+        //var emojiDesc : AnyObject = userDefaults!.valueForKey("currentDescription")!
         if let string = emojiDesc as? String {
             emojiDescription.text = string
         }

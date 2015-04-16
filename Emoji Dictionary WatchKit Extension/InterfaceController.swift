@@ -41,7 +41,7 @@ class InterfaceController: WKInterfaceController {
         self.table.setNumberOfRows(emojis.count, withRowType: "EmojiRow")
         
         for index in 0..<emojis.count {
-            var theRow = table.rowControllerAtIndex(index) as EmojiRow
+            var theRow = table.rowControllerAtIndex(index) as! EmojiRow
             theRow.emojiRowLabel.setText(emojis[index])
             
         }

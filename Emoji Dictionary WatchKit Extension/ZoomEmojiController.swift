@@ -19,7 +19,7 @@ class ZoomEmojiController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
-        var emoji = context as String
+        var emoji = context as! String
         var font = UIFont.systemFontOfSize(80)
         var specialString = NSAttributedString(string: emoji, attributes: [NSFontAttributeName:font])
         zoomEmojiLabel.setAttributedText(specialString)
@@ -35,7 +35,7 @@ class ZoomEmojiController: WKInterfaceController {
         
         var finalresult = cfstr as String
         
-        finalresult = finalresult[advance(finalresult.startIndex,3)..<advance(finalresult.startIndex,countElements(finalresult))]
+        finalresult = finalresult[advance(finalresult.startIndex,3)..<advance(finalresult.startIndex,count(finalresult))]
         
         definitionLabel.setText(finalresult.substringToIndex(finalresult.endIndex.predecessor()))
         
