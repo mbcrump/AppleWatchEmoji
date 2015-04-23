@@ -9,7 +9,6 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
 
 
@@ -23,9 +22,9 @@ class InterfaceController: WKInterfaceController {
         0x1F601...0x1F64F,
         0x2702...0x27B0,
         0x1F680...0x1F6C0,
-        0x1F170...0x1F251
+        0x1F170...0x1F19A//,
+        //0x2122...0x1F5FF
     ]
-  
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -33,8 +32,9 @@ class InterfaceController: WKInterfaceController {
         
         for range in emojiRanges {
             for i in range {
-                
-                emojis.append(String(UnicodeScalar(i)))
+                      emojis.append(String(UnicodeScalar(i)))
+                           //emojis.append(String(UnicodeScalar(i)))
+ 
             }
         }
         
@@ -47,6 +47,8 @@ class InterfaceController: WKInterfaceController {
         }
         
     }
+    
+
     
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
         self.pushControllerWithName("ZoomEmojiController", context: emojis[rowIndex])
